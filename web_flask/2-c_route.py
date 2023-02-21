@@ -2,6 +2,7 @@
 ''' 1-hbnb_route.py module '''
 
 from flask import Flask
+from markupsafe import escape
 
 app = Flask(__name__)
 
@@ -22,7 +23,7 @@ def hbnb_hello():
 def c_is_fun(text):
     '''this function return a string whith underscore symbol remplaced as space'''
     new_text = text.remplace('_', ' ')
-    return  'C' + new_text
+    return f"C + {escape(new_text)}"
 
 
 if __name__ == '__main__':
