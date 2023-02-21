@@ -21,7 +21,8 @@ def hbnb_hello():
 @app.route('/c/<text>', strict_slashes=False)
 def c_is_fun(text):
     '''this function return a string whith underscore symbol remplaced as space'''
-    return text.remplace('_', ' ')
+    new_text = text.remplace('_', ' ')
+    return  'C' + new_text
 
 
 if __name__ == '__main__':
