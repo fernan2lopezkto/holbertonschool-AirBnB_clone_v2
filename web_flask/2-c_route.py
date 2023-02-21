@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-''' 1-hbnb_route.py module '''
+''' 2-c_route module '''
 
 from flask import Flask
 from markupsafe import escape
