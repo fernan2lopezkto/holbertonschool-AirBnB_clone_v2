@@ -1,6 +1,5 @@
 #!/usr/bin/python3
-''' 2-c_route module '''
-
+"""documented"""
 
 from flask import Flask
 
